@@ -7,18 +7,15 @@
   <link rel="stylesheet" href="./output.css">
 
 </head>
-<body class="bodyClass --font-poppins">
+<body class="bodyClass">
 
-  <main class="main">
+  <main class="main" id="main">
     <p class="title">CIGARETTE CART SYSTEM</p>
-
     <section class="grid grid-cols-2 gap-6 w-full">
-
       <div class="productbox">
         <h2 class="plistname">Product List</h2>
-
-          <section class="product-list">
-            <div class="pbox ">
+        <div class="product-list">
+            <div class="pbox">
               <p class="pname">MALBORO</p>
               <img src="MALBORO.png" alt="Marlboro" class="picture">
               <p class="price">₱10.00</p>
@@ -74,17 +71,20 @@
               <button class="add">Add to Cart</button>
             </div>
             
-          </section>
+          </div>
         </div>
 
-      <div class="carts">
-        <div>
-          <h2 class="carttext">Carts</h2>
+      
+        <div class="carts"  id="carts">
+          <div>
+            <h2 class="carttext">Carts</h2>
+            <div class="cartbox">
+          </div>
         </div>
-      </div>
-
+        </div>  
     </section>
   </main>
 
+  <script src="process.js"></script>
 </body>
 </html>

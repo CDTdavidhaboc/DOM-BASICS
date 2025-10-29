@@ -5,7 +5,7 @@
     --font-poppins: 'Poppins', sans-serif;
 }
 .bodyClass{
-    @apply bg-gradient-to-b from-gray-800 to-gray-500 flex justify-center items-center min-h-screen;
+    @apply bg-gradient-to-b from-gray-800 to-gray-500  flex justify-center items-center min-h-screen;
     font-family: var(--font-poppins);
 }
 
@@ -14,7 +14,7 @@
 }
 
 .title{
-    @apply text-center text-7xl text-white mb-8;
+    @apply text-center text-2xl sm:text-2xl md:text-4xl text-white mb-8;
 }
 
 .plistname{
@@ -26,12 +26,13 @@
 }
 
 .product-list{
-    @apply grid grid-cols-2 gap-4 text-sm grow overflow-y-auto pr-2;
+    @apply grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 text-sm grow overflow-y-auto pr-2;
 }
 
 .pbox{
-    @apply bg-gray-100 col-span-1 p-3 rounded-lg;
+    @apply bg-gray-100 col-span-1 p-3 rounded-lg hover:bg-gray-200;
 }
+
 
 .pname{
     @apply font-semibold text-gray-800;
@@ -45,11 +46,15 @@
     @apply text-gray-500;
 }
 .add{
-    @apply bg-gray-500 rounded-lg text-white p-2 mt-2 hover:bg-gray-600;
+    @apply hidden sm:inline md:inline lg:inline bg-gray-500 rounded-lg text-white p-2 mt-2 hover:bg-gray-600  hover:scale-110 duration-200;
+}
+
+.cartbox{
+    @apply bg-gray-500 shadow-md rounded-xl p-6 text-center w-full h-[400px] flex flex-col;
 }
 
 .carts{
-    @apply bg-gray-500 shadow-md rounded-xl p-6 text-center flex flex-col justify-between w-full h-full;
+    @apply bg-gray-500 shadow-md rounded-xl p-6 text-center flex flex-col justify-between grow overflow-y-auto pr-2;
 }
 
 .carttext{
